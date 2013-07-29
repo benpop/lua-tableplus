@@ -32,6 +32,11 @@ Contents:
 	foreach  -->  iterate over key/value pairs
 	foreachi  -->  iterate over index/value pairs
 
+	[Lua globals]
+	ordpairs  -->  iterate over key/value pairs, ordered by keys
+	foreach  -->  like table.foreach.  "print" is the default function.
+	foreachi  -->  like table.foreachi.  "print" is the default function.
+
 Lua manual on tables, and sequences in particular:
 
 http://www.lua.org/manual/5.2/manual.html#2.1
