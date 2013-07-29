@@ -25,8 +25,8 @@ Contents:
 	ireverse
 
 	[Backport to Lua 5.1]
-	pack  -->  ... to table
-	unpack  -->  table to ...
+	pack  -->  vararg (...) to table
+	unpack  -->  table to vararg (...)
 
 	[Forward port to Lua 5.2]
 	foreach  -->  iterate over key/value pairs
