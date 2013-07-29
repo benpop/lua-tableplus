@@ -68,7 +68,7 @@ static int foldl (lua_State *L) {
     lua_rawgeti(L, 1, i++);
   else
     lua_settop(L, 3);
-  for (; i <= n; i++) {
+  for ( ; i <= n; i++) {
     lua_pushvalue(L, 2);  /* function */
     lua_pushvalue(L, 3);  /* accumulator */
     lua_rawgeti(L, 1, i);  /* table[i] */
@@ -86,7 +86,7 @@ static int foldr (lua_State *L) {
     lua_rawgeti(L, 1, i--);
   else
     lua_settop(L, 3);
-  for (; i >= 1; i--) {
+  for ( ; i >= 1; i--) {
     lua_pushvalue(L, 2);  /* function */
     lua_pushvalue(L, 3);  /* accumulator */
     lua_rawgeti(L, 1, i);  /* table[i] */
